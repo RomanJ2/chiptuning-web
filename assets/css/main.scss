@@ -1,0 +1,100 @@
+---
+---
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.25rem;
+  background-color: #ffffff;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1, h2 {
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1.25rem;
+  font-size: 0.95rem;
+}
+
+a {
+  color: #0056b3;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+    color: #d52d2d;
+  }
+}
+
+.navbar-brand {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+footer {
+  background-color: #1d1f20;
+
+  p, a {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #ccc;
+
+    &:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+  }
+}
+
+.contact-section {
+  margin-top: 3rem;
+}
+
+.check-icon {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+// Header / Navigation
+.nav-link.nav-custom {
+  font-size: 1.25rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+  color: #666;
+  font-weight: 500;
+
+  &:hover {
+    color: #d52d2d !important;
+  }
+}
+
+header img {
+  max-height: 64px;
+}
+
+// Wider and padded layout
+.container-narrow,
+.container,
+main .container,
+footer .container {
+  max-width: 1140px; // jemne širšie ako predtým
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.orange-heading h2 {
+  color: #ef6b00;
+}
+
+.section-onas {
+  background-color: #f7f8f9;
+  width: 100%;
+}

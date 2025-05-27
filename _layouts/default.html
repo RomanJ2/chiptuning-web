@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="sk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <meta name="description" content="{{ site.description }}">
+    <meta name="author" content="{{ site.author | default: site.title }}">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Google Fonts (pôsobí profesionálnejšie) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+
+  </head>
+
+  <body>
+	{% include header.html %}
+
+    <!-- Main -->
+    <main class="container">
+      {{ content }}
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-white py-4 mt-5">
+      <div class="container text-center">
+        <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}. Všetky práva vyhradené.</p>
+        <p>Kontakt: <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
