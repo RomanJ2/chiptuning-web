@@ -98,3 +98,34 @@ footer .container {
   background-color: #f7f8f9;
   width: 100%;
 }
+
+.info-bubble {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.05);
+  /* height: 100%; -> zrušené */
+}
+
+.orange-heading {
+  color: #f58020;
+}
+
+.bg-onas {
+  background-color: #f7f8f9;
+  width: 100%;
+}
+
+.text-orange {
+  color: #f58020;
+}
+
+.icon-box {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(245, 128, 32, 0.1);
+  border-radius: 8px;
+}
