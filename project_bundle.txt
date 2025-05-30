@@ -90,6 +90,8 @@ main();
 ---
 layout: default
 title: Chiptuning pre stavebné a poľnohospodárske stroje
+title: Domov
+permalink: /
 ---
 
 <!-- Info Section Between Banner and Main Content -->
@@ -265,17 +267,6 @@ Tento projekt je dostupný pod [MIT licenciou](LICENSE), môžeš ho voľne upra
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@example.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
-
 # Build settings
 # theme: minima
 plugins:
@@ -302,10 +293,13 @@ plugins:
 #   - vendor/ruby/
 title: Chiptuning Stroje
 email: info@chiptuning-stroje.sk
+baseurl: "/chiptuning-web" # the subpath of your site, e.g. /blog
+url: "https://romanj2.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 description: Zvýšte výkon svojho nakladača alebo traktora vďaka profesionálnemu chiptuningu.
 sass:
   style: compressed
-
+# twitter_username: jekyllrb
+# github_username:  jekyll
 
 --- FILE: _includes\disqus_comments.html ---
 {%- if page.comments != false and jekyll.environment == "production" -%}
@@ -403,7 +397,8 @@ if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNo
   <div class="container d-flex justify-content-between align-items-center">
     <!-- Logo only -->
     <a href="/" class="d-flex align-items-center text-decoration-none">
-      <img src="/assets/img/logo4.png" alt="Logo" height="64" class="me-3">
+      <img src="{{ '/assets/img/logo4.png' | relative_url }}" alt="Logo" height="64" class="me-3">
+
     </a>
 
     <!-- Navigation -->
@@ -430,13 +425,13 @@ if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNo
 <div id="mainBanner" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner w-100">
     <div class="carousel-item active">
-      <img src="/assets/img/banner1.png" class="d-block w-100 rounded-0" alt="Banner 1">
+      <img src="{{ '/assets/img/banner1.png' | relative_url }}" class="d-block w-100 rounded-0" alt="Banner 1">
     </div>
     <div class="carousel-item">
-      <img src="/assets/img/banner2.png" class="d-block w-100 rounded-0" alt="Banner 2">
+      <img src="{{ '/assets/img/banner2.png' | relative_url }}" class="d-block w-100 rounded-0" alt="Banner 2">
     </div>
     <div class="carousel-item">
-      <img src="/assets/img/banner3.png" class="d-block w-100 rounded-0" alt="Banner 3">
+      <img src="{{ '/assets/img/banner3.png' | relative_url }}" class="d-block w-100 rounded-0" alt="Banner 3">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#mainBanner" data-bs-slide="prev">

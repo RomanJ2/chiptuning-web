@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Chiptuning pre stavebné a poľnohospodárske stroje
+title: Domov
+permalink: /
 ---
 
 <!-- Info Section Between Banner and Main Content -->
@@ -75,6 +77,31 @@ title: Chiptuning pre stavebné a poľnohospodárske stroje
         </div>
       </div>
 
+    </div>
+  </div>
+</section>
+<!-- Sekcia: Poloha prevádzky -->
+<section class="py-5 bg-white">
+  <div class="container">
+    <h2 class="h4 fw-bold mb-4">Poloha prevádzky</h2>
+    <div class="row g-4">
+      <div class="col-md-8">
+        <div class="ratio ratio-16x9">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d331.16535990359456!2d21.2454959!3d48.7164935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ee038ba9cc88f%3A0xd519ba6a42fd33fc!2sUniverzitn%C3%A1%20kni%C5%BEnica%20Technickej%20univerzity%20v%20Ko%C5%A1iciach!5e0!3m2!1ssk!2ssk!4v1717070427936!5m2!1ssk!2ssk" 
+            width="600" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <h5 class="fw-bold text-orange">Dostupnosť a zázemie</h5>
+        <p>Naša prevádzka sa nachádza v centre Košíc s výbornou dostupnosťou a parkovaním. Disponujeme špičkovo vybavenou garážou, kde vieme obslúžiť aj náročnejšie úpravy pre nákladné a poľnohospodárske stroje.</p>
+        <p>V prípade potreby ponúkame aj výjazd ku zákazníkovi — všetko záleží od konkrétnej dohody a typu zásahu.</p>
+      </div>
     </div>
   </div>
 </section>
